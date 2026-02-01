@@ -1,0 +1,97 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    background: linear-gradient(to bottom right, #ffe6f0, #fff0f5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .please-gif,
+  #please {
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  .show {
+    visibility: visible;
+    opacity: 1;
+  }  
+
+  main {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  #invitation, #accept {
+    background-color: #fff;
+    border-radius: 25px;
+    box-shadow: 0 0 20px rgba(255, 105, 180, 0.3);
+    padding: 30px;
+    max-width: 400px;
+    margin: auto;
+  }
+  
+  .gif {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .please-gif {
+    display: none;
+    margin-top: 10px;
+    max-width: 150px;
+  }
+  
+  .text {
+    font-size: 1.4em;
+    color: #ff4081;
+    margin: 10px 0;
+  }
+  
+  .bold {
+    font-weight: bold;
+    color: #d6336c;
+  }
+  
+  .button-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .buttons {
+    padding: 10px 25px;
+    font-size: 1.2em;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+  }
+  
+  .success {
+    background-color: #ff69b4;
+    color: white;
+  }
+  
+  .danger {
+    background-color: #ffcccc;
+    color: #d6336c;
+  }
+  
+  .buttons:hover {
+    transform: scale(1.05);
+  }
+  
+  #please {
+    font-size: 1em;
+    color: #888;
+    display: none;
+    margin-top: -10px;
+  }
+  
